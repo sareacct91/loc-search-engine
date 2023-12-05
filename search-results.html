@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library of Congress Search Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body id="searchBody">
+    <main class="d-flex text-white h-100">
+        <aside class="col-12 col-md-4 col-lg-3 p-2">
+            <div class="card h-100 border-0">
+                <div class="card-header bg-primary">
+                    <h1 class="text-white">Library of Congress Search Engine</h1>
+                </div>
+                <div class="card-body rounded" id="cardbody2">
+                    <form class="input-group justify-content-center">
+                        <input type="text" id="searchTxt" class="w-100 my-2" placeholder="Enter Search Query">
+                        <select id="formatSelect" class="form-select w-100 my-2">
+                            <option selected>Please select a format...</option>
+                            <option value="audio">Audio Recordings</option>
+                            <option value="books">Books/Printed Material</option>
+                            <option value="film-and-videos">Film & Videos</option>
+                            <option value="legislation">Legislation</option>
+                            <option value="manuscripts">Manuscripts/Mixed Material</option>
+                            <option value="maps">Maps</option>
+                            <option value="newspapers">Newspapers</option>
+                            <option value="photos">Photos, Prints, & Drawings</option>
+                            <option value="notated-music">Printed Music (ie. sheet music)</option>
+                            <option value="web-archives">Web Archives</option>
+                        </select>
+                        <button id="searchBtn2" class="btn my-2 w-100 rounded fs-5 fw-bold">SEARCH</button>
+                        <button id="backBtn" class="btn my-2 w-100 rounded fs-5 fw-bold">BACK</button>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <article class="col-12 col-md-8 col-lg-9 py-2">
+            <div class="h-100 bg-primary rounded p-2">
+                
+                <h2>Showing results for <span id="topicSpan"></span></h2>
+            </div>
+        </article>
+    </main>
+    <footer class="text-center pt-4">
+        <p class="fw-bold">&copy DND Wed Development 2023</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

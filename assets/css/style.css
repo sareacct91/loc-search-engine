@@ -1,0 +1,39 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    height: 100%;
+}
+
+#indexBody {
+    height: 90%;
+    background-color: rgb(43, 43, 43);
+}
+
+#searchBody {
+    height: 90%;
+    background-color: lightgrey;
+}
+
+#cardbody1 {
+    background-color: lightgrey;
+}
+
+#cardbody2 {
+    background-color:rgb(43, 43, 43);
+}
+
+#searchBtn1 {
+    background-color: rgb(133, 252, 212);
+    border-color:  rgb(43, 43, 43);
+    color:  rgb(43, 43, 43);
+}
+
+#searchBtn2 {
+    background-color: rgb(133, 252, 212);
+}
+
+#backBtn {
+    background-color: rgb(250, 96, 96);
+}
