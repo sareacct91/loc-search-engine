@@ -1,0 +1,24 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+Body {
+    height: 90%;
+    background-color: lightgrey;
+}
+
+html {
+    height: 100%;
+}
+
+#cardBody {
+    background-color:rgb(43, 43, 43);
+}
+
+.btn-info {
+    background-color: rgb(133, 252, 212);
+}
+
+#backBtn {
+    background-color: rgb(250, 96, 96);
+}
