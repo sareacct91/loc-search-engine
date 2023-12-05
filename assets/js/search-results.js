@@ -1,6 +1,5 @@
 // DOM selectors
 const formInputEl = document.querySelector('#userSearchInput');
-
 const backBtn = document.querySelector("#backBtn");
 const topicTxt = document.querySelector("#topicSpan");
 const searchResultsEl = document.querySelector('#searchResults');
@@ -79,6 +78,10 @@ formInputEl.addEventListener("submit", (event) => {
 
   fetchAPIdata(getAPIurl())
 });
+
+backBtn.addEventListener('click', () => {
+  document.location.href = `./index.html`;
+})
 
 // Init IIFE
 (onDOMContentLoaded = () => {
