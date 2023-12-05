@@ -22,3 +22,12 @@ html {
 #backBtn {
     background-color: rgb(250, 96, 96);
 }
+
+.list-group {
+    gap: 1rem;
+}
+
+.list-group-item,
+.list-group-item:first-child {
+    border-radius: 1rem;
+}
