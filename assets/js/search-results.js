@@ -7,7 +7,7 @@ const searchResultsEl = document.querySelector('#searchResults');
 // Display the result from API call
 function displayResult(resultsArr) {
   console.log(resultsArr);
-  
+
   searchResultsEl.innerHTML = '';
 
   resultsArr.forEach(data => {
@@ -52,6 +52,8 @@ function getAPIurl(onLoad = false) {
     : selectFormatEl.value;
   
   console.log(format, searchTopic);
+
+  topicTxt.textContent = `"${searchTopic}" in ${format}`;
  
   return `https://www.loc.gov/${format}/?q=${searchTopic}&fo=json`;
 }
