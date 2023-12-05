@@ -35,6 +35,8 @@ function getAPIurl(onLoad = false) {
     const searchTopic = queryParamArr[0].split('=')[1];
     const format = queryParamArr[1].split('=')[1] || 'search';
 
+    topicTxt.textContent = `"${searchTopic}" in ${format}`;
+
     return `https://www.loc.gov/${format}/?q=${searchTopic}&fo=json`;
   }
 
