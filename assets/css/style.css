@@ -16,21 +16,21 @@ html {
     background-color: lightgrey;
 }
 
-#cardbody1 {
+#cardBodyIndex {
     background-color: lightgrey;
 }
 
-#cardbody2 {
+#cardBodySearch {
     background-color:rgb(43, 43, 43);
 }
 
-#searchBtn1 {
+#searchBtnIndex {
     background-color: rgb(133, 252, 212);
     border-color:  rgb(43, 43, 43);
     color:  rgb(43, 43, 43);
 }
 
-#searchBtn2 {
+#searchBtnSearch {
     background-color: rgb(133, 252, 212);
 }
 
