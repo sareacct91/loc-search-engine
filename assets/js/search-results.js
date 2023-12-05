@@ -7,7 +7,8 @@ const searchResultsEl = document.querySelector('#searchResults');
 // Display the result from API call
 function displayResult(resultsArr) {
   console.log(resultsArr);
-  console.log(resultsArr[1].image_url);
+  
+  searchResultsEl.innerHTML = '';
 
   resultsArr.forEach(data => {
     const htmlStr =
@@ -49,12 +50,15 @@ function getAPIurl(onLoad = false) {
   const format = selectFormatEl.value === 'Please select a format...'
     ? 'search'
     : selectFormatEl.value;
+  
+  console.log(format, searchTopic);
  
   return `https://www.loc.gov/${format}/?q=${searchTopic}&fo=json`;
 }
 
 // Fetch the data from API
 async function fetchAPIdata(url) {
+  console.log(url);
   try {
     const reponse = await fetch(url)
 
