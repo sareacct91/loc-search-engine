@@ -81,7 +81,7 @@ formInputEl.addEventListener("submit", (event) => {
 
 backBtn.addEventListener('click', () => {
   document.location.href = `./index.html`;
-})
+});
 
 // Init IIFE
 (onDOMContentLoaded = () => {
